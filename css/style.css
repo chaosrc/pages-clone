@@ -1,0 +1,16 @@
+body{
+  max-width:960px;
+  margin:0 auto;
+  color:white;
+}
+main{
+  background:#b3b3b3;
+  padding:10px;
+
+}
+.subtitle{
+  text-align:center;
+}
+.content p{
+  max-width:500px;
+}
