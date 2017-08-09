@@ -30,7 +30,7 @@ main{
 section .container{
   background:white;
   box-shadow:2px 2px 2px rgba(0,0,0,0.2);
-  padding:15px 0;
+  padding:20px 0;
 }
 .head-picture{
     max-width:250px;
@@ -52,7 +52,10 @@ section .container{
   display:block;
 }
 .tip-container{
-  margin:0 15px;
+  padding:0 15px;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .quote-blue{
   border-left:5px #3498db solid;
@@ -65,6 +68,7 @@ section .container{
   background:#eaf6d0;
   color:#6e9c0f;
 }
+
 @media (max-width:768px){
     .container p.float-right{
         clear:both;
@@ -87,6 +91,41 @@ section .container{
     .sm-bottom-margin-15{
       margin-bottom:15px;
     }
+}
+@media (min-width:769px){
+  .md-width-10{
+    width:100%;
+  }
+  .md-width-8{
+    width:80%;
+  }
+  .md-width-6{
+    width:60%;
+  }
+  .md-width-5{
+    width:50%;
+  }
+  .md-width-4{
+    width:40%;
+  }
+  .tip-container{
+    position:relative;
+  }
+  .tip-container ul{
+    position:absolute;
+    top:10px;
+    left:20%;
+    z-index:2;
+    /* display:none; */
+    transition:all 0.5s;
+    opacity:0;
+    cursor:default;
+    background:rgba(255,255,255,0.8);
+  }
+  .tip-container div:hover ul{
+    display:block;
+    opacity:1;
+  }
 }
 @media (min-width:992px){
   .container{
