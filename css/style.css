@@ -1,16 +1,103 @@
+/* @font-face {
+  font-family:"Lobster";
+  src:url("./font/Lobster-Regular.ttf");
+} */
 body{
   max-width:960px;
   margin:0 auto;
-  color:white;
+  color:#1f2229;
+  background:#6c848c
+}
+section p{
+   max-width:600px; 
 }
 main{
-  background:#b3b3b3;
-  padding:10px;
-
+  padding:10px 20px;
+  background:#6c848c;
+  /* #4467a5 
+   * #6c848c
+   * #429c45  #4caf50
+   * #a4af35
+   *  
+   */
 }
 .subtitle{
   text-align:center;
+  text-transform:uppercase;
+  color:white;
+  font-family: 'Lobster', cursive;
 }
-.content p{
-  max-width:500px;
+section .container{
+  background:white;
+  box-shadow:2px 2px 2px rgba(0,0,0,0.2);
+  padding:15px 0;
+}
+.head-picture{
+    max-width:250px;
+    height:auto;
+    border-radius:50%;
+}
+.padding-10{
+    padding:10px;
+  }
+.float-right{
+    float:right;
+}
+.top-margin-50{
+  margin-top:50px;
+}
+.block-center{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+.tip-container{
+  margin:0 15px;
+}
+.quote-blue{
+  border-left:5px #3498db solid;
+  background:#d6efff;
+  color:#2a7da9;
+
+}
+.quote-yellow{
+  border-left:5px #80bd01 solid;
+  background:#eaf6d0;
+  color:#6e9c0f;
+}
+@media (max-width:768px){
+    .container p.float-right{
+        clear:both;
+    }
+    .head-picture{
+      width:100%;
+      }
+    .sm-text-left{
+      text-align:left;
+      max-width:500px;
+    }
+    .sm-block-center{
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+    .sm-top-margin-0{
+      margin-top:0;
+    }
+    .sm-bottom-margin-15{
+      margin-bottom:15px;
+    }
+}
+@media (min-width:992px){
+  .container{
+    width:920px;
+  }
+  main{
+    margin-top:20px;
+  }
+}
+footer{
+  text-align:center;
+  margin:15px;
+  color:white;
 }

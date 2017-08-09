@@ -1,0 +1,14 @@
+@import './style.css';
+@import './_variable.scss';
+body{
+  background:$body-bg-color;
+}
+main{
+  background:$main-bg-color;
+}
+.subtitle{
+  color:$subtitle-color;
+}
+.container p{
+  color:$text-intro-color;
+}
