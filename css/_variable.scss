@@ -3,7 +3,7 @@ $scheme-1:( #3E556E, #88BAF0, #1D446E);
 $scheme-2:#333B6E #6F80F0 #121E6E;
 $scheme-3:#58526E #C0B3F0 #3D316E #856AED #6853BA;
 
-$scheme:$scheme-3;
+$scheme:$scheme-2;
 
 $body-bg-color:"";
 $main-bg-color:"";
@@ -13,7 +13,7 @@ $text-intro-color:"";
 @each $a,$b,$c,$d,$e in (),$scheme {
   $body-bg-color:$a;
   $main-bg-color:$b;
-  $subtitle-color:$e;
-  $text-intro-color:$e;
+  $subtitle-color:$c;
+  $text-intro-color:$c;
 }
 

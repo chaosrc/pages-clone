@@ -2,6 +2,7 @@
   font-family:"Lobster";
   src:url("./font/Lobster-Regular.ttf");
 } */
+
 body{
   max-width:960px;
   margin:0 auto;
@@ -12,7 +13,7 @@ section p{
    max-width:600px; 
 }
 main{
-  padding:10px 20px;
+  padding:10px 10px;
   background:#6c848c;
   /* #4467a5 
    * #6c848c
@@ -20,6 +21,12 @@ main{
    * #a4af35
    *  
    */
+}
+.block-center{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  max-width:850px;
 }
 .subtitle{
   text-align:center;
@@ -40,23 +47,32 @@ section .container{
 .padding-10{
     padding:10px;
   }
+.padding-20{
+  padding:20px;
+}
 .float-right{
     float:right;
 }
 .top-margin-50{
   margin-top:50px;
 }
-.block-center{
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-}
+
 .tip-container{
   padding:0 15px;
   max-width:800px;
   margin-left:auto;
   margin-right:auto;
 }
+.project-item{
+  padding:10px 20px;
+}
+.project-item p{
+  padding:15px; 
+  text-align:center;
+  color:#666
+}
+    
+
 .quote-blue{
   border-left:5px #3498db solid;
   background:#d6efff;
@@ -67,6 +83,40 @@ section .container{
   border-left:5px #80bd01 solid;
   background:#eaf6d0;
   color:#6e9c0f;
+}
+img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+.exp-period{
+  border-top:3px #3D316E solid;
+  max-width:250px;
+  display:inline-block; 
+  text-align:left;
+  position:relative;
+  box-sizing:border-box;
+  vertical-align: top;
+}
+.exp-period-point{
+  display:block;
+  position:absolute;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  background:#856AED;
+  top:-9px;
+  left:-9px;
+}
+.exp-date{
+  display:block;
+  position:absolute;
+  top:-1.5em;
+  left:8px;
+}
+.exp-description{
+  margin:10px 10px 30px;
 }
 
 @media (max-width:768px){
@@ -91,7 +141,22 @@ section .container{
     .sm-bottom-margin-15{
       margin-bottom:15px;
     }
+    .project .project-item{
+      max-width:350px;
+    }
 }
+  @media (max-width:578px){
+    .exp-period{
+      border-top-style:dotted;
+      border-left:3px #3D316E solid;
+    }
+    .exp-period-now{
+      width:250px;
+      height:20px;
+    }
+
+  }
+  
 @media (min-width:769px){
   .md-width-10{
     width:100%;
@@ -139,4 +204,27 @@ footer{
   text-align:center;
   margin:15px;
   color:white;
+}
+
+@media (min-width:1023px){
+   body main{
+    background:white;
+  }
+  section .container{
+    box-shadow:0 2px 0 rgba(0,0,0,0.2);
+  }
+  .tip-container h4{
+    border:none;
+  }
+  .tip-container ul{
+    display:block;
+    position:initial;
+    opacity: 1;
+  }
+  .tip-container>div{
+    width:50%;
+    float:left;
+    padding-right:20px;
+  }
+
 }
