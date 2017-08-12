@@ -1,6 +1,6 @@
 let sinaURL="http://v.t.sina.com.cn/share/share.php?title=";
 let twitterURL="http://twitter.com/share?text=";
-let quoteAPI="http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10";
+let quoteAPI="https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10";
 
 let nextButton=document.getElementsByClassName('next-quote')[0];
 let randomQuote;

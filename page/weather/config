@@ -11,4 +11,4 @@ http://api.openweathermap.org/data/2.5/find?q=Shanghai&APPID=b1b15e88fa797225412
 http://api.openweathermap.org/data/2.5/find?q=guangzhou&APPID=02b316212183c78c92fdf6d9cee1cce5
 
 var img =  "http://openweathermap.org/img/w/" +JSONobject.list[i].weather[0].icon + ".png";
-    var flag = "http://openweathermap.org/images/flags/" +JSONobject.list[i].sys.country.toLowerCase()  + ".png";
+var flag = "http://openweathermap.org/images/flags/" +JSONobject.list[i].sys.country.toLowerCase()  + ".png";
