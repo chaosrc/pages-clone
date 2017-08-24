@@ -133,7 +133,8 @@ img{
 .line-front i{
   background:white;
   position:relative;
-  padding:0 10px;
+  padding:0 5px 0 10px;
+  font-size:16px;
 }
 .line-front{
   position:relative;
