@@ -283,3 +283,18 @@ footer{
   display:block;
   clear:both;
 }
+
+body {
+  background: #333B6E; }
+
+main {
+  background: #6F80F0; }
+
+.subtitle {
+  color: #121E6E; }
+
+.container p {
+  color: #121E6E; }
+
+.container .line-front {
+  color: #121E6E; }
