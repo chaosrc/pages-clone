@@ -71,6 +71,9 @@ section .container{
   text-align:center;
   color:#666
 }
+.project-item a{
+  color:#121E6E
+}
     
 
 .quote-blue{
@@ -157,11 +160,18 @@ a{
 .color-white{
   color:white;
 }
+.color-primary{
+  color:#2a7da9
+}
 .hover-color-light:hover{
   color:#6F80F0;
 }
 .max-width-600{
   max-width:600px;
+}
+.basic-item>h4{
+  color:#162588;
+  font-weight:bolder;
 }
 @media (max-width:768px){
     .container p.float-right{
