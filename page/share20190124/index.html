@@ -24,8 +24,84 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section data-notes="Something important">Slide 2
+				<section data-notes="">
+					<h3>前端2019</h3>
+					<aside class="notes">
+						why，每个人都会接触，学习、简单, 新的技术、新的领域
+						了解前端，喜欢前端
+						有好几个同学、都说想做前端
+
+						今天我要分享的是关于当前前端的一些我个人所了解的趋势，以及前端可以做什么，应用的一些场景
+						前端大家应该都会有一些了解，特别是后端的小伙伴也做过一些前端
+						前端最近几年就是变化很大，所以了解这些趋势也很重要
+					</aside>
+				</section>
+				<section>
+					<img src='./img/09-19.jpeg'/>
+				</section>
+				<section>
+						<img src='./img/history.jpeg'/>
+				</section>
+				<section>
+					<img src="./img/mind.png"/>
+					<aside class="notes">
+						eletron 应用广泛，跨平台，代码复用, qt，pyqt
+						vscode， slack
+					</aside>
+					<a href="https://github.com/NervJS/taro" target="_blank">Taro</a>
+					<a href="https://eggjs.org/" target="_blank">Eggjs</a>
+					<a href="https://docs.nestjs.com/" target="_blank">Nestjs</a>
+				</section>
+				<section>
+						<h3>问题</h3>
+				</section>
+				<section>
+						<h3>性能</h3>
+						<h3>跨平台</h3>
+						<h3>动态</h3>
+				</section>
+				<section>
+					<section>
+						<h3>PWA</h3>
+						<p>Progressive Web App</p>
+						<aside class="notes">
+								nativ缺点
+								由于其天生封闭的基因，内容无法被索引
+								用户 80% 的时间被 Top3 的超级 App 占据，对于站点来说，应用分发的性价比也越来越不划算
+								要使用它，首先还需要下载几十兆上百着兆的安装包
+
+								web缺点
+								离线时用户无法使用
+								无法接收消息推送
+								移动端没有一级入口
+
+								可安装
+								离线使用
+								消息推送
+						</aside>
+					</section>
+					<section>
+						<a href="https://m.weibo.cn/">微博PWA</a>
+						<a href="https://m.douban.com/">豆瓣PWA</a>
+					</section>
+			
+				</section>
+				<section>
+					<a href="https://github.com/flutter/flutter" target="_blank"><h3 style="text-transform: none">Flutter</h3></a>
+				</section>
+				<section>
+					<h3 style="text-transform: none">WebAssembly</h3>
+				</section>
+				<!-- <section data-markdown>
+					<textarea data-template>
+						## Page title
+				
+						A paragraph with some text and a [link](http://hakim.se).
+					</textarea>
+				</section> -->
+				<section>
+					<h2>Some Slide</h2>
+				
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
 					</aside>
@@ -42,7 +118,10 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				overview: true,
 				dependencies: [
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
